@@ -4,6 +4,15 @@ resource "aws_vpc" "test-vpc-01" {
   enable_dns_hostnames = true
 
   tags = {
-    Name = "test-vpc-01 Alo 1234"
+    Name = "vuhanh6989-vpc"
   }
+}
+
+
+resource aws_vpc staging-vpc {
+    provider = aws.staging-user
+    cidr_block = "10.200.0.0/16"
+    tags = {
+        Name = "vncross-vpc"
+    }
 }
