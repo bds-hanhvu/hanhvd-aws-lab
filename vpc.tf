@@ -9,8 +9,8 @@ resource "aws_vpc" "test-vpc-01" {
 }
 
 
-resource aws_vpc staging-vpc {
-    provider = aws.staging-user
+resource aws_vpc vncross-vpc {
+    provider = aws.vncross-user
     cidr_block = "10.200.0.0/16"
     tags = {
         Name = "vncross-vpc"
