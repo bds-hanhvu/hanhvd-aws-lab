@@ -13,7 +13,10 @@ provider "aws" {
 
 provider "aws" {
   region = "ap-southeast-1"
-  alias = "staging-user"
-  profile = "staging-user"
-  assume_role = "arn:aws:iam::987549667347:role/atlantis-assume-role"
+  alias = "vncross-user"
+  profile = "vncross-user"
+  assume_role = {
+    role_arn = "arn:aws:iam::987549667347:role/atlantis-assume-role"
+    session_name = "vncross-user"
+  }
 }
