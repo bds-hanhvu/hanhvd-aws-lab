@@ -4,7 +4,7 @@ resource "aws_vpc" "test-vpc-01" {
   enable_dns_hostnames = true
 
   tags = {
-    Name = "vuhanh6989-vpc"
+    Name = "vuhanh6989-vpc-delete-all"
   }
 }
 
